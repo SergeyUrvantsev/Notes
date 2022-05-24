@@ -14,8 +14,11 @@ using Notes.Application.Notes.Commands.DeleteNote;
 
 namespace Notes.WebApi.Controllers
 {
+    //[ApiVersion("1.0")]
+    //[ApiVersion("2.0")]
+    [ApiVersionNeutral]
     [Produces("application/json")]
-    [Route("api/[controller]")]
+    [Route("api/{version:apiVersion}[controller]")]
     public class NoteController : BaseController
     {
         private readonly IMapper _mapper;
