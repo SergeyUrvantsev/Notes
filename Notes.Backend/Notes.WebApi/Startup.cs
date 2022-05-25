@@ -56,7 +56,7 @@ namespace Notes.WebApi
             })
                 .AddJwtBearer("Bearer", option =>
                 {
-                    option.Authority = "http://localhost:5216";
+                    option.Authority = "http://localhost:47647";
                     option.Audience = "NotesWebAPI";
                     option.RequireHttpsMetadata = false;
                 });
